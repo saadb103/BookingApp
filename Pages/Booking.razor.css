@@ -1,0 +1,125 @@
+legend {
+    display: block !important;
+    padding-inline-start: 2px !important;
+    padding-inline-end: 2px !important;
+    border-width: initial !important;
+    border-style: none !important;
+    border-color: initial !important;
+    border-image: initial !important;
+    float: unset !important;
+    width: unset !important;
+    font-size: 12px;
+    margin-bottom: 0px !important;
+}
+
+fieldset {
+    display: block !important;
+    margin-inline-start: 2px !important;
+    margin-inline-end: 2px !important;
+    padding-block-start: 0.35em !important;
+    padding-inline-start: 0.75em !important;
+    padding-inline-end: 0.75em !important;
+    padding-block-end: 0.625em !important;
+    min-inline-size: min-content !important;
+    border-width: 2px !important;
+    border-style: groove !important;
+    border-color: var(--secondary) !important;
+    border-radius: 6px;
+    border-image: initial !important;
+}
+
+.accordion-item  .accordion-button{
+    background-color: var(--secondary) !important;
+
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+.accordion-item  .accordion-header{
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+.accordion-item{
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+
+    border-bottom-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+.accordion-button:not(.collapsed){
+    background-color: var(--secondary) !important;
+    color: black !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+  
+}
+
+.accordion-button::after{
+    background-image: url(../img/triangle.png) !important;
+    width: 20px !important;
+    height: 15px !important;
+
+}
+.accordion-button:focus{
+    box-shadow: none !important;
+    border: none !important;
+    color: black !important;
+
+}
+.nofocus:focus{
+    outline: none !important                                                ;
+}
+.passenger__head{    
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+    background-color: var(--third);
+    padding: 20px 0px 10px 0px;
+}
+.passenger__body{    
+    border: 2px solid var(--third);
+    border-radius: 8px  ;
+}
+.add__passenger{
+    border: 2px solid var(--primary);
+    padding: 8px 20px;
+    color: var(--primary);
+    border-radius: 23px;
+
+}
+.add__passenger:hover{
+
+    color: var(--primary) !important;
+
+}
+select{
+    background-color: transparent !important;
+}
+.minus,.plus{
+    background-color: var(--third);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.rounded-pill{
+    /* width: 50px !important; */
+    white-space: nowrap !important;
+    margin-right: 10px !important;
+}
+
+.btn__save{
+    border: 2px solid var(--white);
+    padding: 6px 30px !important;
+    border-radius: 40px;
+    width: 200px;
+    color: var(--white) !important;
+}

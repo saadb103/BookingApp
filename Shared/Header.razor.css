@@ -1,0 +1,29 @@
+.logo{
+    width: 250px;
+}
+.btn__dashboard,.btn__trips,.btn__account{
+    border: 2px solid var(--white);
+    padding: 12px 20px !important;
+    border-radius: 25px;
+    color: var(--white) !important;
+    height: 50px;
+}
+.btn__newtrip{
+    background-color: var(--white);
+    padding: 12px 30px !important;
+    border-radius: 25px;
+    color: var(--primary) !important;
+    height: 50px;
+}
+.collapse:not(.show) {
+    display: none !important;
+}
+input[type="date" i]::-webkit-calendar-picker-indicator {
+    background-image: none !important;
+}
+input::-webkit-datetime-edit {
+    /* padding-top: 5px; */
+}
+input[type="time" i]::-webkit-calendar-picker-indicator {
+    background-image: url(../img/triangle.png) !important;
+}

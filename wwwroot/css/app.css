@@ -1,8 +1,5 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
-
-html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 h1:focus {
     outline: none;
@@ -99,3 +96,93 @@ a, .btn-link {
     .loading-progress-text:after {
         content: var(--blazor-load-percentage-text, "Loading");
     }
+
+/* Custom CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Universal Colors */
+:root {
+    --primary: #373960;
+    --secondary: #DADEEF;
+    --third: #dadeef48;
+    --white: #fff;
+    --white2: #F9FAFC;
+}
+
+/* universal classes */
+.bg__primary {
+    background-color: var(--primary);
+}
+
+.bg__secondary {
+    background-color: var(--secondary);
+}
+
+.bg__white {
+    background-color: var(--white);
+}
+
+.bg__white2 {
+    background-color: var(--white2);
+}
+
+.text__primary {
+    color: var(--primary);
+}
+
+.text__secondary {
+    color: var(--secondary);
+}
+
+.text__white {
+    color: var(--white);
+}
+
+.text__white2 {
+    color: var(--white2);
+}
+
+.fs-7 {
+    font-size: 13px;
+}
+
+.fs-8 {
+    font-size: 12px;
+}
+
+.fs-9 {
+    font-size: 11px;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+.pointer {
+    cursor: pointer;
+}

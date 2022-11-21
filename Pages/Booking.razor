@@ -1,0 +1,977 @@
+@page "/"
+
+<section class="banner container mt-5">
+    <h2 class="fw-400"> Booking Details</h2>
+    <div>
+        <Summary />
+    </div>
+    <div class="mt-5"><Progress /></div>
+</section>
+
+<section class="section__2 container mt-5">
+    <div class="accordion gap-3 d-flex flex-column" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <span> <img class="pe-3" src="assets/img/user_round.svg" alt=""></span> <span
+                        class="fw-400 fs-5">Primary Passenger Information</span>
+
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <form action="/action_page.php" class="py-4">
+                        <div class="row mx-0">
+                            <div class="col-lg-2 col-0"></div>
+                            <div class="col-lg-4 ">
+                                <fieldset>
+                                    <legend>Select Existing</legend>
+                                    <select class="border-0 w-100 nofocus" name="Select" id="">
+                                        <option value="0"> New Passenger</option>
+                                        <option value="1"> New Passenger</option>
+                                        <option value="2"> New Passenger</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-4 mt-lg-0 mt-3">
+                                <fieldset>
+                                    <legend>Alias</legend>
+                                    <input class="border-0 w-100 nofocus" type="text" id="" />
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-2 col-0"></div>
+                        </div>
+                        <div class="row mx-0 mt-3">
+                            <div class="col-lg-2 col-0"></div>
+                            <div class="col-lg-4">
+                                <fieldset>
+                                    <legend>First Name</legend>
+                                    <input class="border-0 w-100 nofocus" type="text" id="" />
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-4 mt-3 mt-lg-0">
+                                <fieldset>
+                                    <legend>Last Name</legend>
+                                    <input class="border-0 w-100 nofocus" type="text" id="" />
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-2 col-0"></div>
+                        </div>
+                        <div class="row mx-0 mt-3">
+                            <div class="col-lg-2 col-0"></div>
+                            <div class="col-lg-4">
+                                <fieldset>
+                                    <legend>Phone Number</legend>
+                                    <div class="row mx-0">
+                                        <div class="col-2 ps-0">
+                                            <img src="assets/img/phone.svg" alt="">
+                                        </div>
+                                        <div class="col-10">
+                                            <input class="border-0 w-100 nofocus" type="number" id="">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-4 mt-3 mt-lg-0">
+                                <fieldset>
+                                    <legend>Email Address</legend>
+                                    <div class="row mx-0">
+                                        <div class="col-2 ps-0">
+                                            <img src="assets/img/maik.svg" alt="">
+                                        </div>
+                                        <div class="col-10">
+                                            <input class="border-0 w-100 nofocus" type="email" id="" />
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-2 col-0"></div>
+                        </div>
+                        <div class="row mx-0 mt-3">
+                            <div class="col-lg-2 col-0"></div>
+                            <div class="col-lg-8">
+                                <div class="d-flex gap-3 mt-3">
+                                    <input type="checkbox">
+                                    <p class="mb-0 fw-500">
+                                        Include Flight Information
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-0"></div>
+                        </div>
+                        <div class="row mx-0 mt-3">
+                            <div class="col-lg-2 col-0"></div>
+                            <div class="col-lg-3">
+                                <fieldset>
+                                    <legend>Airport</legend>
+                                    <div class="row mx-0">
+                                        <div class="col-12">
+                                            <select class="border-0 w-100 nofocus" type="text" id="">
+                                                <option value="">Las Vegas Airport</option>
+                                                <option value="">Saint Mariana Airport</option>
+                                                <option value="">Vulture Sky Airport</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-3 mt-3 mt-lg-0">
+                                <fieldset>
+                                    <legend>Airlines</legend>
+                                    <div class="row mx-0">
+                                        <div class="col-12">
+                                            <select class="border-0 w-100 nofocus" type="text" id="">
+                                                <option value="">Las Vegas Airlines</option>
+                                                <option value="">Saint Mariana Airlines</option>
+                                                <option value="">Vulture Sky Airlines</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-2 mt-3 mt-lg-0">
+                                <fieldset>
+                                    <legend>Flight #</legend>
+                                    <div class="row mx-0">
+
+                                        <div class="col-12">
+                                            <input class="border-0 w-100 nofocus" type="text" id="" />
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-2 col-0"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <span> <img class="pe-3" src="assets/img/add_friend.svg" alt=""></span> <span
+                        class="fw-400 fs-5">Additional Passengers</span><span
+                        class="ms-3 bg__primary text-white px-3 rounded-pill fs-5 ">+ 2</span>
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="passenger__div">
+                        <div class="passenger__head">
+                            <div class="row mx-0">
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-8">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h5 class="text__primary mb-0">Passenger #1</h5>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span>
+                                                <img src="assets/img/remove.svg" class="me-2" alt="">
+                                            </span>
+                                            <p class="fs-6 text-danger mb-0">Remove</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2"></div>
+                            </div>
+                        </div>
+                        <div class="passenger__body">
+                            <form action="/action_page.php" class="py-4">
+                                <div class="row mx-0 mt-3">
+                                    <div class="col-lg-2 col-0"></div>
+                                    <div class="col-lg-4">
+                                        <fieldset>
+                                            <legend>First Name</legend>
+                                            <input class="border-0 w-100 nofocus" type="text" id="" />
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-4 mt-3 mt-lg-0">
+                                        <fieldset>
+                                            <legend>Last Name</legend>
+                                            <input class="border-0 w-100 nofocus" type="text" id="" />
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-2 col-0"></div>
+                                </div>
+                                <div class="row mx-0 mt-3">
+                                    <div class="col-lg-2 col-0"></div>
+                                    <div class="col-lg-4">
+                                        <fieldset>
+                                            <legend>Phone Number</legend>
+                                            <div class="row mx-0">
+                                                <div class="col-2 ps-0">
+                                                    <img src="assets/img/phone.svg" alt="">
+                                                </div>
+                                                <div class="col-10">
+                                                    <input class="border-0 w-100 nofocus" type="number" id="">
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-4 mt-3 mt-lg-0">
+                                        <fieldset>
+                                            <legend>Email Address</legend>
+                                            <div class="row mx-0">
+                                                <div class="col-2 ps-0">
+                                                    <img src="assets/img/maik.svg" alt="">
+                                                </div>
+                                                <div class="col-10">
+                                                    <input class="border-0 w-100 nofocus" type="email" id="" />
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-2 col-0"></div>
+                                </div>
+                                <div class="row mx-0 mt-3">
+                                    <div class="col-lg-2 col-0"></div>
+                                    <div class="col-lg-8 ">
+                                        <fieldset>
+                                            <legend>Note</legend>
+                                            <div class="row mx-0">
+                                            <div class="col-10">
+                                                <input class="border-0 w-100 nofocus" type="text" id="remove1" />
+                                            </div>
+                                            <div class="col-2 d-flex justify-content-end pe-0">
+                                                <a href="" onclick="document.getElementById('remove1').value='';" class="text-decoration-none">
+                                                    <img src="assets/img/cross.svg" alt="" class="">
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-2 col-0"></div>
+                                </div>
+                                <div class="row mx-0 mt-3">
+                                    <div class="col-lg-2 col-0"></div>
+                                    <div class="col-lg-8">
+                                        <div class="d-flex gap-3 mt-3">
+                                            <input type="checkbox">
+                                            <p class="mb-0 fw-500">
+                                                Include Flight Information
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-0"></div>
+                                </div>
+                                <div class="row mx-0 mt-3">
+                                    <div class="col-lg-2 col-0"></div>
+                                    <div class="col-lg-3">
+                                        <fieldset>
+                                            <legend>Airport</legend>
+                                            <div class="row mx-0">
+                                                <div class="col-12">
+                                                    <select class="border-0 w-100 nofocus" type="text" id="">
+                                                        <option value="">Las Vegas Airport</option>
+                                                        <option value="">Saint Mariana Airport</option>
+                                                        <option value="">Vulture Sky Airport</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-3 mt-3 mt-lg-0">
+                                        <fieldset>
+                                            <legend>Airlines</legend>
+                                            <div class="row mx-0">
+                                                <div class="col-12">
+                                                    <select class="border-0 w-100 nofocus" type="text" id="">
+                                                        <option value="">Las Vegas Airlines</option>
+                                                        <option value="">Saint Mariana Airlines</option>
+                                                        <option value="">Vulture Sky Airlines</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-2 mt-3 mt-lg-0">
+                                        <fieldset>
+                                            <legend>Flight #</legend>
+                                            <div class="row mx-0">
+
+                                                <div class="col-12">
+                                                    <input class="border-0 w-100 nofocus" type="text" id="" />
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-2 col-0"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="passenger__div mt-4">
+                        <div class="passenger__head">
+                            <div class="row mx-0">
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-8">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h5 class="text__primary mb-0">Passenger #2</h5>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span>
+                                                <img src="assets/img/remove.svg" class="me-2" alt="">
+                                            </span>
+                                            <p class="fs-6 text-danger mb-0">Remove</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2"></div>
+                            </div>
+                        </div>
+                        <div class="passenger__body">
+                            <form action="/action_page.php" class="py-4">
+
+                                <div class="row mx-0 mt-3">
+                                    <div class="col-lg-2 col-0"></div>
+                                    <div class="col-lg-4">
+                                        <fieldset>
+                                            <legend>First Name</legend>
+                                            <input class="border-0 w-100 nofocus" type="text" id="">
+
+                                            
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-4 mt-3 mt-lg-0">
+                                        <fieldset>
+                                            <legend>Last Name</legend>
+                                            <input class="border-0 w-100 nofocus" type="text" id="">
+
+                                            
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-2 col-0"></div>
+                                </div>
+                                <div class="row mx-0 mt-3">
+                                    <div class="col-lg-2 col-0"></div>
+                                    <div class="col-lg-4">
+                                        <fieldset>
+                                            <legend>Phone Number</legend>
+                                            <div class="row mx-0">
+                                                <div class="col-2 ps-0">
+                                                    <img src="assets/img/phone.svg" alt="">
+                                                </div>
+                                                <div class="col-10">
+                                                    <input class="border-0 w-100 nofocus" type="number" id="">
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-4 mt-3 mt-lg-0">
+                                        <fieldset>
+                                            <legend>Email Address</legend>
+                                            <div class="row mx-0">
+                                                <div class="col-2 ps-0">
+                                                    <img src="assets/img/maik.svg" alt="">
+                                                </div>
+                                                <div class="col-10">
+                                                    <input class="border-0 w-100 nofocus" type="email" id="">
+                                                </div>
+                                            </div>
+
+                                            
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-2 col-0"></div>
+                                </div>
+                                <div class="row mx-0 mt-3">
+                                    <div class="col-lg-2 col-0"></div>
+                                    <div class="col-lg-8 ">
+                                        <fieldset>
+                                            <legend>Note</legend>
+                                            <div class="row mx-0">
+                                            <div class="col-10">
+                                                <input class="border-0 w-100 nofocus" type="text" id="remove2">
+
+                                            </div>
+                                            <div class="col-2 d-flex justify-content-end pe-0">
+                                                <a href="" class="text-decoration-none" onclick="document.getElementById('remove2').value='';">
+                                                        <img src="assets/img/cross.svg" alt="" class="">
+                                                </a>
+                                                
+                                            </div>
+                                            </div>
+                                            
+
+                                            
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="col-lg-2 col-0"></div>
+                                </div>
+                                <div class="row mx-0 mt-3">
+                                    <div class="col-lg-2 col-0"></div>
+                                    <div class="col-lg-8">
+                                        <div class="d-flex gap-3 mt-3">
+                                            <input type="checkbox">
+                                            <p class="mb-0 fw-500">
+                                                Include Flight Information
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-2 col-0"></div>
+                                </div>
+                                <div class="row mx-0 mt-3">
+                                    <div class="col-lg-2 col-0"></div>
+                                    <div class="col-lg-3">
+                                        <fieldset>
+                                            <legend>Airport</legend>
+                                            <div class="row mx-0">
+                                                <div class="col-12">
+                                                    <select class="border-0 w-100 nofocus" type="text" id="">
+                                                        <option value="">Las Vegas Airport</option>
+                                                        <option value="">Saint Mariana Airport</option>
+                                                        <option value="">Vulture Sky Airport</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-3 mt-3 mt-lg-0">
+                                        <fieldset>
+                                            <legend>Airlines</legend>
+                                            <div class="row mx-0">
+
+                                                <div class="col-12">
+                                                    <select class="border-0 w-100 nofocus" type="text" id="">
+                                                        <option value="">Las Vegas Airlines</option>
+                                                        <option value="">Saint Mariana Airlines</option>
+                                                        <option value="">Vulture Sky Airlines</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-2 mt-3 mt-lg-0">
+                                        <fieldset>
+                                            <legend>Flight #</legend>
+                                            <div class="row mx-0">
+
+                                                <div class="col-12">
+                                                    <input class="border-0 w-100 nofocus" type="text" id="">
+                                                </div>
+                                            </div>
+
+                                            
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-2 col-0"></div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-center justify-content-lg-end mt-5">
+                        <a href="#" class="text-decoration-none add__passenger">
+                            + Add Passenger
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <span> <img class="pe-3" src="assets/img/location_marker.svg" alt=""></span> <span
+                        class="fw-400 fs-5">Additional Stops</span><span
+                        class="ms-3 bg__primary text-white px-3 rounded-pill fs-5 ">+ 1</span>
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="passenger__div">
+                        <div class="passenger__head">
+                            <div class="row mx-0">
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-8">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h5 class="text__primary mb-0">Stop #1</h5>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span>
+                                                <img src="assets/img/remove.svg" class="me-2" alt="">
+                                            </span>
+                                            <p class="fs-6 text-danger mb-0">Remove</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2"></div>
+                            </div>
+                        </div>
+                        <div class="passenger__body">
+                            <form action="/action_page.php" class="py-4">
+
+                                <div class="row mx-0 mt-3">
+                                    <div class="col-lg-2 col-0"></div>
+                                    <div class="col-lg-4">
+                                        <fieldset>
+                                            <legend>Summary</legend>
+                                            <input class="border-0 w-100 nofocus pt-1" type="text" id="" />
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-4 mt-3 mt-lg-0">
+                                        <fieldset class="py-0">
+                                            <legend>Address</legend>
+                                            <div class="row mx-0 align-items-start">
+                                                <div class="col-10 ps-0">
+                                                    <input class="border-0 w-100 nofocus" type="text" id="" />
+                                                </div>
+                                                <div class="col-2 pe-0 pb-1">
+                                                    <img src="assets/img/location__highlight.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-2 col-0"></div>
+                                </div>
+                                <div class="row mx-0 mt-3">
+                                    <div class="col-lg-2 col-0"></div>
+                                    <div class="col-lg-4">
+                                        <fieldset>
+                                            <legend>Stop Date</legend>
+                                            <div class="row mx-0">
+
+                                                <div class="col-10">
+                                                    <input class="border-0 w-100 nofocus" type="date" id="" />
+                                                </div>
+                                                <div class="col-2 ps-0">
+                                                    <img src="assets/img/calendar__highlight.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-4 mt-3 mt-lg-0">
+                                        <fieldset>
+                                            <legend>Stop Time - Start with</legend>
+                                            <div class="row mx-0 py-2">
+                                                <div class="col-2 ps-0">
+                                                    <img src="assets/img/clock.svg" alt="">
+                                                </div>
+                                                <div class="col-10">
+                                                    <input class="border-0 w-100 nofocus" type="time" id="" />
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-2 col-0"></div>
+                                </div>
+                                <div class="row mx-0 mt-3">
+                                    <div class="col-lg-2 col-0"></div>
+                                    <div class="col-lg-8 ">
+                                        <fieldset>
+                                            <legend>Note</legend>
+                                            <div class="row mx-0">
+                                            <div class="col-10">
+                                                <input class="border-0 w-100 nofocus" type="text" id="remove3" />
+
+                                            </div>
+                                            <div class="col-2 d-flex justify-content-end pe-0">
+                                                <a href="" class="text-decoration-none" onclick="document.getElementById('remove3').value='';">
+                                                    <img src="assets/img/cross.svg" alt="" class="">
+                                                </a>
+                                            </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="col-lg-2 col-0"></div>
+                                </div>
+                                <div class="row mx-0 mt-3">
+                                    <div class="col-lg-2 col-0"></div>
+                                    <div class="col-lg-8">
+                                        <div class="d-flex gap-3 mt-3">
+                                            <input type="checkbox">
+                                            <p class="mb-0 fw-500">
+                                                Include Flight Information
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-2 col-0"></div>
+                                </div>
+                                <div class="row mx-0 mt-3">
+                                    <div class="col-lg-2 col-0"></div>
+                                    <div class="col-lg-3">
+                                        <fieldset>
+                                            <legend>Airport</legend>
+                                            <div class="row mx-0">
+                                                <div class="col-12">
+                                                    <select class="border-0 w-100 nofocus" type="text" id="">
+                                                        <option value="">Las Vegas Airport</option>
+                                                        <option value="">Saint Mariana Airport</option>
+                                                        <option value="">Vulture Sky Airport</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-3 mt-3 mt-lg-0">
+                                        <fieldset>
+                                            <legend>Airlines</legend>
+                                            <div class="row mx-0">
+
+                                                <div class="col-12">
+                                                    <select class="border-0 w-100 nofocus" type="text" id="">
+                                                        <option value="">Las Vegas Airlines</option>
+                                                        <option value="">Saint Mariana Airlines</option>
+                                                        <option value="">Vulture Sky Airlines</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-2 mt-3 mt-lg-0">
+                                        <fieldset>
+                                            <legend>Flight #</legend>
+                                            <div class="row mx-0">
+
+                                                <div class="col-12">
+                                                    <input class="border-0 w-100 nofocus" type="text" id="">
+                                                </div>
+                                            </div>
+
+                                            
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-2 col-0"></div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-center justify-content-lg-end mt-5">
+                        <a href="#" class="text-decoration-none add__passenger">
+                            + Add Stop
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <span> <img class="pe-3" src="assets/img/star.svg" alt=""></span> <span
+                        class="fw-400 fs-5">Additional Items</span><span
+                        class="ms-3 bg__primary text-white px-3 rounded-pill fs-5 ">+ 1</span>
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                    <div class="row mx-0 py-5">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-10">
+                            <div class="row mx-0 ">
+                                <div class="col-lg-5">
+                                    <div
+                                        class="d-flex w-100 justify-content-lg-between justify-content-center flex-wrap gap-3">
+                                        <div class="d-flex gap-3">
+                                            <div><input type="checkbox"></div>
+                                            <div>
+                                                Child Car Seat (+ $25 each)
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="minus">-</div>
+                                            <div class="fs-5"> 2 </div>
+                                            <div class="plus">+</div>
+                                        </div>
+
+                                    </div>
+                                    <div
+                                        class="d-flex w-100 justify-content-lg-between justify-content-center flex-wrap mt-4 gap-3">
+                                        <div class="d-flex gap-3">
+                                            <div><input type="checkbox"></div>
+                                            <div>
+                                                Child Car Seat (+ $25 each)
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="minus">-</div>
+                                            <div class="fs-5"> 2 </div>
+                                            <div class="plus">+</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-2"></div>
+
+                                <div class="col-lg-5">
+                                    <div
+                                        class="d-flex w-100 justify-content-lg-between justify-content-center flex-wrap gap-3">
+                                        <div class="d-flex gap-3 flex-wrap ">
+                                            <div><input type="checkbox"></div>
+                                            <div>
+                                                Child Car Seat (+ $25 each)
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="minus">-</div>
+                                            <div class="fs-5"> 2 </div>
+                                            <div class="plus">+</div>
+                                        </div>
+
+                                    </div>
+                                    <div
+                                        class="d-flex w-100 justify-content-lg-between justify-content-center flex-wrap mt-4 gap-3">
+                                        <div class="d-flex gap-3">
+                                            <div><input type="checkbox"></div>
+                                            <div>
+                                                Child Car Seat (+ $25 each)
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="minus">-</div>
+                                            <div class="fs-5"> 2 </div>
+                                            <div class="plus">+</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr class="bg__secondary">
+                            <div class="d-flex justify-content-center justify-content-lg-end gap-3 flex-wrap">
+                                <div>
+                                    <p class="mb-0 fw-500">Total:</p>
+                                </div>
+                                <div>
+                                    <p class="mb-1">Child Car Seat (x2)</p>
+                                    <p class="mb-1">Child Car Seat (x2)</p>
+                                    <p class="mb-1">Child Car Seat (x2)</p>
+                                </div>
+                                <div>
+                                    <p class="mb-0 fw-bold">+ $145</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <span> <img class="pe-3" src="assets/img/bunny.svg" alt=""></span> <span
+                        class="fw-400 fs-5">Another Closed Section</span><span
+                        class="ms-3 bg__primary text-white px-3 rounded-pill fs-5 ">+ 1</span>
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="passenger__div">
+                        <div class="passenger__head">
+                            <div class="row mx-0">
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-8">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h5 class="text__primary mb-0">Stop #1</h5>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span>
+                                                <img src="assets/img/remove.svg" class="me-2" alt="">
+                                            </span>
+                                            <p class="fs-6 text-danger mb-0">Remove</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2"></div>
+                            </div>
+
+
+                        </div>
+                        <div class="passenger__body">
+                            <form action="/action_page.php" class="py-4">
+
+                                <div class="row mx-0 mt-3">
+                                    <div class="col-lg-2 col-0"></div>
+                                    <div class="col-lg-4">
+                                        <fieldset>
+                                            <legend>Summary</legend>
+                                            <input class="border-0 w-100 nofocus pt-1" type="text" id="">
+
+                                            
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-4 mt-3 mt-lg-0">
+                                        <fieldset class="py-0">
+                                            <legend>Address</legend>
+                                            <div class="row mx-0 align-items-start">
+                                                <div class="col-10 ps-0">
+                                                    <input class="border-0 w-100 nofocus" type="text" id="">
+
+                                                    
+                                                </div>
+                                                <div class="col-2 pe-0 pb-1">
+                                                    <img src="assets/img/location__highlight.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-2 col-0"></div>
+                                </div>
+                                <div class="row mx-0 mt-3">
+                                    <div class="col-lg-2 col-0"></div>
+                                    <div class="col-lg-4">
+                                        <fieldset>
+                                            <legend>Stop Date</legend>
+                                            <div class="row mx-0">
+
+                                                <div class="col-10">
+                                                    <input class="border-0 w-100 nofocus" type="number" id="">
+                                                </div>
+                                                <div class="col-2 ps-0">
+                                                    <img src="assets/img/calendar__highlight.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-4 mt-3 mt-lg-0">
+                                        <fieldset>
+                                            <legend>Stop Time - Start with</legend>
+                                            <div class="row mx-0 py-2">
+                                                <div class="col-2 ps-0">
+                                                    <img src="assets/img/clock.svg" alt="">
+                                                </div>
+                                                <div class="col-10">
+                                                    <input class="border-0 w-100 nofocus" type="time" id="">
+                                                </div>
+                                            </div>
+
+                                            
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-2 col-0"></div>
+                                </div>
+                                <div class="row mx-0 mt-3">
+                                    <div class="col-lg-2 col-0"></div>
+                                    <div class="col-lg-8 ">
+                                        <fieldset>
+                                            <legend>Note</legend>
+                                            <div class="row mx-0">
+                                            <div class="col-10">
+                                                <input class="border-0 w-100 nofocus" type="text" id="remove4">
+
+                                            </div>
+                                            <div class="col-2 d-flex justify-content-end pe-0">
+                                                <a href="" class="text-decoration-none" onclick="document.getElementById('remove4').value='';">
+                                                    <img src="assets/img/cross.svg" alt="" class="">
+                                                </a>
+                                    
+                                            </div>
+                                            </div>
+                                            
+
+                                            
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="col-lg-2 col-0"></div>
+                                </div>
+                                <div class="row mx-0 mt-3">
+                                    <div class="col-lg-2 col-0"></div>
+                                    <div class="col-lg-8">
+                                        <div class="d-flex gap-3 mt-3">
+                                            <input type="checkbox">
+                                            <p class="mb-0 fw-500">
+                                                Include Flight Information
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-2 col-0"></div>
+                                </div>
+                                <div class="row mx-0 mt-3">
+                                    <div class="col-lg-2 col-0"></div>
+                                    <div class="col-lg-3">
+                                        <fieldset>
+                                            <legend>Airport</legend>
+                                            <div class="row mx-0">
+                                                <div class="col-12">
+                                                    <select class="border-0 w-100 nofocus" type="text" id="">
+                                                        <option value="">Las Vegas Airport</option>
+                                                        <option value="">Saint Mariana Airport</option>
+                                                        <option value="">Vulture Sky Airport</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-3 mt-3 mt-lg-0">
+                                        <fieldset>
+                                            <legend>Airlines</legend>
+                                            <div class="row mx-0">
+
+                                                <div class="col-12">
+                                                    <select class="border-0 w-100 nofocus" type="text" id="">
+                                                        <option value="">Las Vegas Airlines</option>
+                                                        <option value="">Saint Mariana Airlines</option>
+                                                        <option value="">Vulture Sky Airlines</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-2 mt-3 mt-lg-0">
+                                        <fieldset>
+                                            <legend>Flight #</legend>
+                                            <div class="row mx-0">
+
+                                                <div class="col-12">
+                                                    <input class="border-0 w-100 nofocus" type="text" id="">
+                                                </div>
+                                            </div>
+
+                                            
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-2 col-0"></div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-center justify-content-lg-end mt-5">
+                        <a href="#" class="text-decoration-none add__passenger">
+                            + Add Stop
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex  gap-3 align-items-center  justify-content-center justify-content-lg-end my-4">
+        <a class="btn__save bg__primary text-decoration-none">
+            <span class="fs-5">
+                Save Changes
+            </span>
+        </a>
+    </div>
+</section>

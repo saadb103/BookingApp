@@ -1,0 +1,16 @@
+.banner__card{
+    box-shadow: 0px 4px 10px rgba(15, 23, 42, 0.08);
+    border-radius: 10px;
+}
+.secondary__car__card{
+    border-radius: 20px;
+}
+.white__space{
+    white-space: nowrap;
+}
+
+@media (max-width:991px) {
+    .white__space{
+        white-space: initial!important;
+    }
+}

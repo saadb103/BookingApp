@@ -107,8 +107,8 @@ a, .btn-link {
 
 /* Universal Colors */
 :root {
-    --primary: #373960;
-    --secondary: #DADEEF;
+    /* --primary: #373960;
+    --secondary: #DADEEF; */
     --third: #dadeef48;
     --white: #fff;
     --white2: #F9FAFC;

@@ -1,4 +1,7 @@
 @page "/"
+@page "/{token}"
+
+@using BookingApp.Shared.Models
 
 <section class="banner container mt-5">
     <h2 class="fw-400"> Booking Details</h2>
@@ -975,3 +978,8 @@
         </a>
     </div>
 </section>
+
+@code {
+    [Parameter] public string Token { get; set; }
+    [CascadingParameter] public OperatorContext OperatorContext { get; set; }
+}

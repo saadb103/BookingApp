@@ -1,3 +1,5 @@
+@using BookingApp.Shared.Models
+
 <div class="container">
     <div class="row mx-0 gap-lg-0 gap-3">
         <div class="col-lg-4 d-flex justify-content-lg-start justify-content-center">
@@ -11,7 +13,7 @@
             </div>
             <div class="mx-auto">
                 <a href="#" class="text-decoration-none text-white d-block mt-3 ">
-                    <i class="fa-solid fa-envelope me-2 text-white"></i> limocompany@email.com
+                    <i class="fa-solid fa-envelope me-2 text-white"></i>@OperatorContext.CompanyEmail
                 </a>
             </div>
             <div class="mx-auto">
@@ -57,3 +59,8 @@
         </div>
     </div>
 </div>
+
+
+@code {
+    [CascadingParameter] public OperatorContext OperatorContext { get; set; }
+}

@@ -1,18 +1,64 @@
 <div class="progress_bar">
     <div class="row mx-0 gap-lg-0 gap-5">
         <div class="col-lg-8 ps-lg-0">
-            <img src="assets/img/Progressbar.png" alt="" class="img-fluid">
+           <div>
+                <ul class="form-stepper form-stepper-horizontal text-center ">
+                    <!-- Step 1 -->
+                    <li class="@(CurrentStep == 1 ? "form-stepper-active":"form-stepper-completed") text-center form-stepper-list">
+                        <a class="">
+                            <span class="form-stepper-circle">
+                                <span>
+                                    <i class="oi oi-check"></i>
+                                </span>
+                            </span>
+                            <div class="label">Search</div>
+                        </a>
+                    </li>
+                    <!-- Step 2 -->
+                    <li class="@(CurrentStep == 2 ? "form-stepper-active": CurrentStep > 2 ? "form-stepper-completed": "form-stepper-unfinished") text-center form-stepper-list">
+                        <a class="">
+                            <span class="form-stepper-circle text-muted">
+                                <span>
+                                    <i class="oi oi-check"></i>
+                                </span>
+                            </span>
+                            <div class="label text-muted">Details</div>
+                        </a>
+                    </li>
+                    <!-- Step 3 -->
+                    <li class="@(CurrentStep == 3 ? "form-stepper-active": CurrentStep > 3 ? "form-stepper-completed": "form-stepper-unfinished") text-center form-stepper-list">
+                        <a class="">
+                            <span class="form-stepper-circle text-muted">
+                                <span>
+                                    <i class="oi oi-check"></i>
+                                </span>
+                            </span>
+                            <div class="label text-muted">Payment</div>
+                        </a>
+                    </li>
+                    <!-- Step 3 -->
+                    <li class="@(CurrentStep == 4 ? "form-stepper-active": CurrentStep > 4 ? "form-stepper-completed": "form-stepper-unfinished") text-center form-stepper-list">
+                        <a class="">
+                            <span class="form-stepper-circle text-muted">
+                                <span>
+                                    <i class="oi oi-check"></i>
+                                </span>
+                            </span>
+                            <div class="label text-muted last-label">Summary</div>
+                        </a>
+                    </li>
+                </ul>
+            </div> 
         </div>
         <div class="col-lg-4 pe-lg-0">
-            <div
-                class="d-flex justify-content-lg-end justify-content-center gap-5 align-items-center mb-0 flex-wrap">
-                <div>
+            <div class="d-flex justify-content-lg-end justify-content-center gap-5 align-items-center mb-0 flex-wrap">
+                <div class="cursor-pointer" @onclick="ResetProgress">
                     <p class="mb-0 text__primary d-flex align-items-center gap-3 fw-bold">
                         <span><img src="assets/img/reset.svg" alt=""></span>
                         <span> Restart</span>
                     </p>
                 </div>
-                <div class="btn__next bg__primary d-flex gap-3">
+                <div class="btn__next bg__primary d-flex gap-3 cursor-pointer" @onclick="GoToNextStep">
                     <span class="fs-5">
                         Next
                     </span>
@@ -24,3 +70,16 @@
         </div>
     </div>
 </div>
+
+@code {
+    private int CurrentStep { get; set; } = 1;
+    private void GoToNextStep()
+    {
+        if(CurrentStep == 4) return;
+        CurrentStep++;
+    }
+    private void ResetProgress()
+    {
+        CurrentStep = 1;
+    }
+}
